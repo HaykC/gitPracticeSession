@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				"json:Cucumber_reports/cucumber_report.json"},
 		features="./src/test/resources/features",
 		glue="tests",
-		tags="@SalesandExpensesHeader"
+		tags="@DashboardElementsVerification"
 		)
 public class testRunner {
 

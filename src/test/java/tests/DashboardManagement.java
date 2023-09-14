@@ -22,4 +22,13 @@ public class DashboardManagement {
 		Assert.assertEquals(dashboard.Dashboard_SalesAndExpenses_Header.getText(), string);
 	}
 	
+	@Then("I should see buttons Amount Due, Customers, Invoices and Estimates.")
+	public void i_should_see_buttons_amount_due_customers_invoices_and_estimates() {
+	   utils.waitForElementToBeVisible(dashboard.AmountDue);
+	   Assert.assertTrue(dashboard.AmountDue.isDisplayed());
+	   Assert.assertTrue(dashboard.Customers.isDisplayed());
+	   Assert.assertTrue(dashboard.Invoices.isDisplayed());
+	   Assert.assertTrue(dashboard.Estimates.isDisplayed());
+	}
+	
 }
