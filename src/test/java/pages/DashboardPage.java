@@ -10,7 +10,9 @@ public class DashboardPage {
 	public DashboardPage() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
-
+		
+	
+	
 	@FindBy(xpath = "//span[text()='Amount Due']")
 	public WebElement AmountDue;
 
@@ -28,7 +30,11 @@ public class DashboardPage {
 	
 	@FindBy (xpath = "//p[text()='Logged in successfully.']")
 	public WebElement loggedInSuccessMessage;
+	
+	@FindBy (xpath = "//h6[contains(text(), 'Sales &')]")
+	public WebElement Dashboard_SalesAndExpenses_Header;
 
+	
 	
 
 }
