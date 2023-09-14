@@ -18,3 +18,8 @@ Background:
    Scenario: As a user when I log in, I should be on the dashboard pages
    Then I should be on the Dashboard home page
    Then I should see buttons "Amount Due", "Customers", "Invoices" and "Estimates".
+   
+   @DashboardHeadersVerification
+   Scenario: As a user when I log in, I should be on the dashboard pages
+   Then I should be on the Dashboard home page
+   Then I should see headers "Due Invoices" and "Recent Estimates".

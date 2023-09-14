@@ -33,6 +33,12 @@ public class DashboardPage {
 	
 	@FindBy (xpath = "//h6[contains(text(), 'Sales &')]")
 	public WebElement Dashboard_SalesAndExpenses_Header;
+	
+	@FindBy (xpath = "//h6[text()='Due Invoices']")
+	public WebElement Dashboard_DueInvoices_Header;
+	
+	@FindBy (xpath = "//h6[text()='Recent Estimates']")
+	public WebElement Dashboard_RecentEstimates_Header;
 
 	
 	

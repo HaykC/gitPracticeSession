@@ -37,13 +37,17 @@ public class DashboardManagement {
 	    Assert.assertTrue(dashboard.AmountDue.getText().contains(amountDue));
 	    Assert.assertTrue(dashboard.Customers.getText().contains(customers));
 	    Assert.assertTrue(dashboard.Invoices.getText().contains(invoices));
-	    Assert.assertTrue(dashboard.Estimates.getText().contains(estimates));
+	    Assert.assertTrue(dashboard.Estimates.getText().contains(estimates)); 
+	}
 	
-	    
-	    
-	    
-	    
-	    
+	@Then("I should see headers {string} and {string}.")
+	public void i_should_see_headers_and(String dueInvoices, String recentEstimates) {
+		utils.waitForElementToBeVisible(dashboard.Dashboard_DueInvoices_Header);
+		Assert.assertTrue(dashboard.Dashboard_DueInvoices_Header.isDisplayed());
+		Assert.assertTrue(dashboard.Dashboard_RecentEstimates_Header.isDisplayed());
+		Assert.assertTrue(dashboard.Dashboard_DueInvoices_Header.getText().contains(dueInvoices));
+		Assert.assertTrue(dashboard.Dashboard_RecentEstimates_Header.getText().contains(recentEstimates));
+		
 	    
 	}
 }
