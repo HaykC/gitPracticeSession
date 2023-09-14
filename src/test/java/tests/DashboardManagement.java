@@ -31,4 +31,29 @@ public class DashboardManagement {
 	   Assert.assertTrue(dashboard.Estimates.isDisplayed());
 	}
 	
+	@Then("I should see buttons {string}, {string}, {string} and {string}.")
+	public void i_should_see_buttons_and(String amountDue, String customers, String invoices, String estimates) {
+		utils.waitForElementToBeVisible(dashboard.AmountDue);
+	    Assert.assertTrue(dashboard.AmountDue.getText().contains(amountDue));
+	    Assert.assertTrue(dashboard.Customers.getText().contains(customers));
+	    Assert.assertTrue(dashboard.Invoices.getText().contains(invoices));
+	    Assert.assertTrue(dashboard.Estimates.getText().contains(estimates));
+	
+	    
+	    
+	    
+	    
+	    
+	    
+	}
 }
+
+
+
+
+
+
+
+
+
+

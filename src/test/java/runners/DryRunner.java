@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="./src/test/resources/features",
 		glue="tests",
-		tags="@DashboardElementsVerification",
+		tags="@DashboardButtonsVerification",
 		dryRun=true
 		)
 public class DryRunner {
