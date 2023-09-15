@@ -46,10 +46,10 @@ public class DashboardPage {
 	@FindBy (xpath = "//div[@tabindex='0']")
 	public WebElement Dashboard_DropDown;
 	
-	@FindBy (xpath = "//h6[text()='Recent Estimates']")
+	@FindBy (xpath = "//span[text()='This year']")
 	public WebElement Dashboard_DropDownYear_This_Year;
 	
-	@FindBy (xpath = "//h6[text()='Recent Estimates']")
+	@FindBy (xpath = "//span[text()='Previous year']")
 	public WebElement Dashboard_DropDownYear_Previous_Year;
 
 	
