@@ -23,3 +23,9 @@ Background:
    Scenario: As a user when I log in, I should be on the dashboard pages
    Then I should be on the Dashboard home page
    Then I should see headers "Due Invoices" and "Recent Estimates".
+   
+   @DashboardTableElementsVerification
+   Scenario: As a user when I log in, I should be on the dashboard pages
+   Then I should be on the Dashboard home page
+   Then I should Verify that you see the graph under Sales & Expenses section and a dropdown with "This year" and "Previous year" options.
+   

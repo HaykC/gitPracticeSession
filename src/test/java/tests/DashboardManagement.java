@@ -48,7 +48,18 @@ public class DashboardManagement {
 		Assert.assertTrue(dashboard.Dashboard_DueInvoices_Header.getText().contains(dueInvoices));
 		Assert.assertTrue(dashboard.Dashboard_RecentEstimates_Header.getText().contains(recentEstimates));
 		
-	    
+	}
+	
+	@Then("I should Verify that you see the graph under Sales & Expenses section and a dropdown with {string} and {string} options.")
+	public void i_should_verify_that_you_see_the_graph_under_sales_expenses_section_and_a_dropdown_with_and_options(String string, String string2) {
+	    utils.waitForElementToBeClickable(dashboard.Dashboard_Table);
+	    Assert.assertTrue(dashboard.Dashboard_Table.isDisplayed());
+	    Assert.assertTrue(dashboard.Dashboard_DropDown.isDisplayed());
+	    utils.waitForElementToBeVisible(dashboard.Dashboard_DropDown);
+	    dashboard.Dashboard_DropDown.click();
+	    utils.waitForElementToBeVisible(dashboard.Dashboard_DropDownYear_This_Year);
+	    Assert.assertTrue(dashboard.Dashboard_DropDownYear_This_Year.isDisplayed());
+	    Assert.assertTrue(dashboard.Dashboard_DropDownYear_Previous_Year.isDisplayed());
 	}
 }
 
