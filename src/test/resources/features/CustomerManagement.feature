@@ -1,4 +1,4 @@
-@CustomerManagementTests @Regression
+@CustomerManagementTests
 Feature: Customer management
 
   Background: 
