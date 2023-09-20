@@ -34,11 +34,6 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>PrimeTechFinancials</groupId>
-			<artifactId>PrimeTechFinancials</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -55,7 +50,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						<include>**/testRunner.java</include>
+						<include>**/TestRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
