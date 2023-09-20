@@ -1,4 +1,4 @@
-package tests;
+package utils;
 
 import java.time.Duration;
 
@@ -8,7 +8,6 @@ import org.openqa.selenium.TakesScreenshot;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import utils.Driver;
 
 public class Hooks {
 	
