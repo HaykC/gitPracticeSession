@@ -1,4 +1,4 @@
-@itemsManagement @Regression
+@itemsManagement
 Feature: Items Management
 
 	Background:

@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@userManagement @Regression
+@userManagement
 Feature: Login attempt without credentials
 
   Scenario: 2 field required messages
