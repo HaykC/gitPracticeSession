@@ -1,4 +1,4 @@
-@paymentTests @Regression
+@paymentTests @Regression @sanityTest
 Feature: Payments page
 
 Background:
