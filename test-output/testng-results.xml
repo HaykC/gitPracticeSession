@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-28T20:35:35 CDT" name="Default suite" finished-at="2023-09-28T20:35:43 CDT" duration-ms="8125">
+    <groups>
+    </groups>
+    <test started-at="2023-09-28T20:35:35 CDT" name="Default test" finished-at="2023-09-28T20:35:43 CDT" duration-ms="8125">
+      <class name="api_tests.CreaterCustomerAPI">
+        <test-method signature="crater_login()[pri:0, instance:api_tests.CreaterCustomerAPI@5f18f9d2]" started-at="2023-09-28T20:35:35 CDT" name="crater_login" finished-at="2023-09-28T20:35:38 CDT" duration-ms="3623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crater_login -->
+        <test-method signature="create_a_customer()[pri:0, instance:api_tests.CreaterCustomerAPI@5f18f9d2]" started-at="2023-09-28T20:35:38 CDT" name="create_a_customer" finished-at="2023-09-28T20:35:39 CDT" depends-on-methods="api_tests.CreaterCustomerAPI.crater_login" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_a_customer -->
+        <test-method signature="list_of_customers()[pri:0, instance:api_tests.CreaterCustomerAPI@5f18f9d2]" started-at="2023-09-28T20:35:39 CDT" name="list_of_customers" finished-at="2023-09-28T20:35:42 CDT" depends-on-methods="api_tests.CreaterCustomerAPI.crater_login" duration-ms="2755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- list_of_customers -->
+        <test-method signature="get_a_customer_by_id()[pri:0, instance:api_tests.CreaterCustomerAPI@5f18f9d2]" started-at="2023-09-28T20:35:42 CDT" name="get_a_customer_by_id" finished-at="2023-09-28T20:35:42 CDT" depends-on-methods="api_tests.CreaterCustomerAPI.create_a_customer" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_a_customer_by_id -->
+        <test-method signature="update_a_customer_by_id()[pri:0, instance:api_tests.CreaterCustomerAPI@5f18f9d2]" started-at="2023-09-28T20:35:42 CDT" name="update_a_customer_by_id" finished-at="2023-09-28T20:35:43 CDT" depends-on-methods="api_tests.CreaterCustomerAPI.create_a_customer" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_a_customer_by_id -->
+      </class> <!-- api_tests.CreaterCustomerAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
