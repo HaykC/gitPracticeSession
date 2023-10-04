@@ -3,6 +3,7 @@ package tests;
 import java.time.Duration;
 
 import org.junit.Assert;
+import org.openqa.selenium.interactions.Actions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -22,6 +23,7 @@ public class ItemsManagement_steps {
 	CommonPage common = new CommonPage();
 	DashboardPage dashboard = new DashboardPage();
 	ItemsPage items = new ItemsPage();
+	Actions action = new Actions(Driver.getDriver());
 	
 	@Given("As an entity user, I am logged in")
 	public void as_an_entity_user_i_am_logged_in() {
@@ -82,7 +84,10 @@ public class ItemsManagement_steps {
 
 	@Then("I delete the item")
 	public void i_delete_the_item() throws InterruptedException {
-	    items.AddItem_FilterBtn.click();
+		utils.waitForElementToBeVisible(items.AddItem_FilterBtn);
+		action.moveToElement(items.AddItem_FilterBtn);
+		utils.clickWithActionsClass(items.AddItem_FilterBtn);
+	//    items.AddItem_FilterBtn.click();
 	    utils.waitForElementToBeVisible(items.AddItem_Filter_Name_Box);
 	    utils.sendKeysWithActionClass(items.AddItem_Filter_Name_Box, "Coffee mugs");
 	    utils.waitForElementToBeVisible(items.AddItem_Filter_3_Dots_Btn);

@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="./src/test/resources/features",
 		glue="tests",
-		tags="@addPaymentButtonVerification",
+		tags="@VerifyingLoginPageUI_Components",
 		dryRun=true
 		)
 public class DryRunner {
